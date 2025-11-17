@@ -21,7 +21,7 @@ export default function App() {
   const [selected, setSelected] = useState(null); // 🔹 Espèce dans la modale
 
   useEffect(() => {
-    fetch("/data/especes.json")
+    fetch("./data/especes.json")
       .then((res) => res.json())
       .then((jsonData) => {
         console.log("JSON chargé :", jsonData);

@@ -4,6 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/Hurghada/',
   plugins: [
     react(),
     VitePWA({
@@ -19,17 +20,17 @@ export default defineConfig({
         start_url: '.',
         icons: [
           {
-            src: '/icon-192.png',
+            src: '/Hurghada/icon-192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: '/icon-512.png',
+            src: '/Hurghada/icon-512.png',
             sizes: '512x512',
             type: 'image/png'
           },
           {
-            src: '/icon-512-maskable.png',
+            src: '/Hurghada/icon-512-maskable.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable'
